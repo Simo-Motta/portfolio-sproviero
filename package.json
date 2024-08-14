@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "name": "project_portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
