@@ -1,0 +1,198 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Root */
+
+:root {
+    --clr-light: #F5F5F5;
+    --clr-dark: #141414;
+
+    --font-primary: 'Poppins', sans-serif;
+    --font-size-sm: 1.5rem;  /*24px*/
+    --font-size-md: 2.5rem;  /*40px*/
+    --font-size-lg: 4rem;  /*64px*/
+    --font-size-xl: 4.5rem;  /*72px*/
+
+    --font-weight-sm: 300;
+    --font-weight-md: 400;
+    --font-weight-lg: 500;
+    --font-weight-xl: 600;
+}
+
+h1, h2, h3, p, a {
+    font-family: var(--font-primary);
+}
+
+a {
+    color: var(--clr-dark);
+}
+
+h2, .description {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-sm);
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: var(--font-weight-md);
+}
+
+.nav-text {
+    font-weight: var(--font-weight-lg);
+}
+
+.container-video {
+    width: 100%;
+    height: 508px;
+    background-color: var(--clr-dark);
+    border-radius: 40px;
+}
+
+.carousel-indicators {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin: 0;
+}
+
+.carousel-indicators [data-bs-target]{
+    min-width: 70px;
+    max-width: 82px;
+    height: 11px;
+    border-radius: 30px;
+    background-color: #d9d9d9;
+    padding: 0;
+    border: 0;
+}
+
+.element {
+    min-width: 70px;
+    max-width: 82px;
+    height: 11px;
+    border-radius: 30px;
+    background-color: #911b1b;
+    padding: 0;
+}
+
+.skillDescription-btn {
+    /* width: 100%; */
+    width: 250px;
+    height: 91px;
+    border-radius: 10px;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .skillDescription-btn {
+        width: 366px;
+        height: 91px;
+    }
+    
+    .skillDescription-btn-closed {
+        border: 0;
+        background-color: #fff;
+        color: var(--clr-dark);
+        font-family: var(--font-primary);
+        font-weight: var(--font-weight-md);
+    }
+    
+    .skillDescriptionText p {
+        font-weight: var(--font-weight-md);
+    }
+    
+    .skillDescriptionText p:nth-child(1) {
+        font-size: 2rem;
+    }
+    
+    .skillDescriptionText p:nth-child(2) {
+        font-size: var(--font-size-sm);
+    }
+    
+    /* Animazione Accordion */
+    .accordion-collapse {
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease;
+    }
+    
+    .accordion-collapse.show {
+        transform: scaleX(1);
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .button {
+        background-color: var(--clr-dark);
+        color: var(--clr-light);
+        width: fit-content;
+        border-radius: 40px;
+        padding: 16px 15px 16px 15px;
+    }
+
+    .button p {
+        font-weight: var(--font-weight-lg);
+    }
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
