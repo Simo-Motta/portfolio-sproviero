@@ -75,6 +75,11 @@ h2, .description {
     font-weight: var(--font-weight-sm);
 }
 
+.description a {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-md);
+}
+
 h3 {
     font-size: 2rem;
     font-weight: var(--font-weight-md);
@@ -89,6 +94,14 @@ h3 {
     height: 508px;
     background-color: var(--clr-dark);
     border-radius: 40px;
+}
+
+.davide-img {
+    width: 480px;
+    height: 655px;
+    border-radius: 40px;
+    background-color: black;
+    transform: rotate(176.29deg);
 }
 
 .carousel-indicators {
@@ -142,13 +155,13 @@ h3 {
         height: 91px;
     }
     
-    .skillDescription-btn-closed {
+    /* .skillDescription-btn-closed {
         border: 0;
         background-color: #fff;
         color: var(--clr-dark);
         font-family: var(--font-primary);
         font-weight: var(--font-weight-md);
-    }
+    } */
     
     .skillDescriptionText p {
         font-weight: var(--font-weight-md);
@@ -161,8 +174,16 @@ h3 {
     .skillDescriptionText p:nth-child(2) {
         font-size: var(--font-size-sm);
     }
+
+    /* Accordion */
+    .accordion .collapsed {
+        border: 0;
+        background-color: #fff;
+        color: var(--clr-dark);
+        font-family: var(--font-primary);
+        font-weight: var(--font-weight-md);
+    }
     
-    /* Animazione Accordion */
     .accordion-collapse {
         transform: scaleX(0);
         transform-origin: right;
